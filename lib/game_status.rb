@@ -37,5 +37,7 @@ def over?(board)
 end
 
 def winner?(board)
-  won?(board).board[combo[0]]
+  if won?(board)
+    board[combo[0]]
+  end
 end
