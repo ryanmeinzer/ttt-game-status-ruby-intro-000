@@ -27,3 +27,7 @@ def full?(board)
     player != "X" && player != "O"
   end
 end
+
+def draw?(board)
+  board.full? ? true : false
+end
